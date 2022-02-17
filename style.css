@@ -415,7 +415,7 @@ body{
 
 
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 530px) {
     .banner{
         width: 100%;
 
@@ -498,6 +498,7 @@ body{
 
     .main .text1{
         font-size: 40px;
+        padding: 20px;
     }
 
     .desktop{

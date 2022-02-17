@@ -1,33 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Sunnyside Agency Landing Page</title>
 </head>
 <body>
+    
     <div class="container">
         <div class="banner">
-            <div class="header">
+            <div class="header mobile">
                 <img class="logo" src="https://svgur.com/i/Zvd.svg" alt="logo">
-
-                <div class="menu">
-                    <span>About</span>
-                    <span>Service</span>
-                    <span>Project</span>
-
-                    <div class="contact">
-                        Contact
-
-                    </div>
-
+                <img class="dropbtn" onclick="myFunction()" src="https://img.icons8.com/material-rounded/24/000000/menu--v1.png"/>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#about">About</a>
+                    <a href="#service">Service</a>
+                    <a href="#project">Project</a>
+                    <a href="#contact">Contact</a>
                 </div>
 
+                <!-- <div class="menu" >
+                    <p>About</p>
+                    <p>Service</p>
+                    <p>Project</p>
+                    <p>Contact</p>
+                </div> -->
+
             </div>
+
+            <div class="header desktop">
+                <img class="logo" src="https://svgur.com/i/Zvd.svg" alt="">
+                <div class="menu">
+                    <p>About</p>
+                    <p>Service</p>
+                    <p>Project</p>
+                    <p>Contact</p>
+
+                </div>
+                
+
+
+            </div>
+
+
+
             <div class="main">
-                <span class="text1">WE ARE CREATIVE</span>
+                <h1 class="text1">WE ARE CREATIVE</h1>
                 <img class="arrow" src="image/arrow.png" alt="">
 
             </div>
@@ -91,11 +116,27 @@
             <div class="clients">
                 <div class="client">
                     <div class="client-image">
-                        <img src="./image/94fde781-ef54-4d7a-8b59-fc7117f6773c.jpg" alt="">
+                        <img src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/60/000000/external-man-thanksgiving-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png"/>
                     </div>
                     
                     <p>
-                        We put our trust in sunyside and they delivered, making sure our need were metand deadlines were always hit.
+                        We put our trust in sunyside and they delivered, <br> making sure our need were metand deadlines were always hit.
+                    </p>
+                    <div class="details">
+                        <h2>Andrew R.P.</h2>
+                        <span>Marketing Director</span>
+
+                    </div>
+
+                </div>
+
+                <div class="client">
+                    <div class="client-image">
+                        <img src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/60/000000/external-man-thanksgiving-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png"/>
+                    </div>
+                    
+                    <p>
+                        We put our trust in sunyside and they delivered, <br> making sure our need were metand deadlines were always hit.
                     </p>
                     <div class="details">
                         <h2>Andrew R.P.</h2>
@@ -107,27 +148,11 @@
 
                 <div class="client">
                     <div class="client-image">
-                        <img src="./image/94fde781-ef54-4d7a-8b59-fc7117f6773c.jpg" alt="">
+                        <img src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/60/000000/external-man-thanksgiving-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png"/>
                     </div>
                     
                     <p>
-                        We put our trust in sunyside and they delivered, making sure our need were metand deadlines were always hit.
-                    </p>
-                    <div class="details">
-                        <h2>Andrew R.P.</h2>
-                        <h4>Marketing Director</h4>
-
-                    </div>
-
-                </div>
-
-                <div class="client">
-                    <div class="client-image">
-                        <img src="./image/94fde781-ef54-4d7a-8b59-fc7117f6773c.jpg" alt="">
-                    </div>
-                    
-                    <p>
-                        We put our trust in sunyside and they delivered, making sure our need were metand deadlines were always hit.
+                        We put our trust in sunyside and they delivered,<br> making sure our need were metand deadlines were always hit.
                     </p>
                     <div class="details">
                         <h2>Andrew R.P.</h2>
@@ -154,7 +179,7 @@
             <div>
                 <img class="logo" src="https://svgur.com/i/Zvd.svg" alt="">
             </div>
-
+           
             <div class="footer-navigation">
                 <span>About</span>
                 <span>Service</span>
@@ -163,10 +188,10 @@
             </div>
 
             <div class="socialmedia">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+                <img src="https://img.icons8.com/android/24/000000/facebook.png"/>
+                <img src="https://img.icons8.com/material-outlined/24/000000/instagram-new--v1.png"/>
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/twitter--v1.png"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAFFElEQVRoge2aW2yVRRDHf0gbRVraIrRqTLxQ6xVjFGNQ8ZKIiokhBsFqFfXBBwR9MSYaffFCQyI+q1ETGxEoSrwh0QcTjUZMIWoCwRYqiJoqaqG02lR7OT7Md3T73/0u5/AFfTj/ZJNvvp2dndlvd2Z2zoEKKqggCVNyltcIXANcDLRE9PSo73fgV2AP8DXwcUT/b9AAPAh0ARNAIWObAL4AVgH1x1xrBw3AGmCQ7MrHtSNAO/+BQcuBg0eheFz7GWgrR6FSz0gt8CJwRwLPIPApsAs4gK02QB1wOnAhsACYkSBjHbACO1e5own4kvBKjgIbgIXA1AyyqoAbgY3AWIzMHZizyBVNQE/MhG8AZx2F7DnA5hjZPeRoTC3hL9EPLM5rEuBW4FBgnh1ATdrgLGdkPf6Z6MW2xr6YMccD84DTgNlYLBkEfsIW5fuYcc3AB9hXcrEOuDuDrrFYjr9Ce4GTA7zHAa3AFuyQJnmn3cATmANQnIItlI4py5uBxQl1sf2Ez8MNwM4U5UPtMLAyIK856lPXXFacWROYWM/EFOBRYDxB2WFgJMWgTmCayF4S4FtdqhENmP9X76RoD0x2GFgLXI05iiJOwhZifYzhm7Ht6eIt4RmgxK+ySgSM4m+pZfi5VUekcBouIuzOnxK+s/HjzAOlGNIlgzdIfw3++XmylAmwr75bZIzgL1in8GzLOkEj/kovFJ7HpL+T8q4E5wF/iaxXhOcm6R8HZmURvkwGDuCnHe62GMZcpov7gG4sXqzFUpI4vCzz9QPVTn8VfoZ9WxZDVsugLdI/h+QVbJX+AnBvwnzXB/ivEp6t0v+0ClEvAXazc7FL6EsDkxRRBTwTkLkg8K6IzwPvzkzRQXUMGqJJ2ncp/d3O8zn46QXAH4F3RQxjW8eFblXVoUmFhAypFXpI6OlCDzjPzQF54K9oGkaFPiK06hg0RKEH/UehXQ9SiJHxUYL8anzFfsug1ySEDNEvMFPoXqEvd557AvJ6gW8TdDgX33XvF1qTS9UxaMgvQmumux34waHdFL8noMT7gTlczBd6JJrDxRlCH1QhIUN0VS8TegJ43aGvBRZFz1PxU5StJON2oT8D/pR3c1N0DGIpk332IH5Aa2Rymt0Rvb9Exo4BJyTMNQ8/gVwiPNX4AVF5gpiNn6LcEuBbjHmXAlbxAHhIxo1it8UQpuHndHvxncsi4RknW2IKWAXQHfxmDN/N2JkoBihN8FwjXcwA3hO+CWybKjYJXyiAxmKlDB4Dzs8wrg/fkHHgOex+cgXwCBbglK89IK8FP40PLUws6vEvVu+mjNEcbJjsteBnY2S+I3wDhO/5iQjd/u5M4L9HeDcCj5N8De7DykAhqNMpEM7jUlGPXfjVg3kJW4SXhPf+6P2VmLveH43/Bngbq4qcGCOrBVt9Nbrkr1FEG/6qHMAPUEQKunzlVh9PxeplOm9rmfL+wWsBofuACxyemUw+Dxrds6KFsBGvlilvEmqwsqUKH+LfMzNf+l4oY56l+NupgMUazbjLRiPxRewPgYfl3XUlyG7B907F1o0F6FzRSPjLaNtJeiGiGovYm4j/WaGrFCNKrXzUAM8DdyXwDGMGb8fuLocwF1yHOYm52J08qcLegQXlpJtlLmjDd815tD5y8E6loh6ruGgGUE4bwCojZceJPFCHlTG3kRzFtY1jCeAKcjAg7z8MzML/w0DxPj6E3T73AF8Bn2DFuAoqqOAY4G+aoIxmuagimQAAAABJRU5ErkJggg==">
 
             </div>
 
@@ -179,4 +204,6 @@
 
     </div>
 </body>
+<script src="main.js"></script>
+
 </html>
